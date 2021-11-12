@@ -7,6 +7,7 @@ PKGS=(
 'discord'
 'blender'
 'steam'
+'p7zip'
 )
 
 for PKG in "${PKGS[@]}"; do
