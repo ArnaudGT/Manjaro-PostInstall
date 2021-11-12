@@ -1,2 +1,2 @@
 # Manjaro-PostInstall
-Manjaro post installation setup script 
+Manjaro KDE post installation setup script 
