@@ -1,3 +1,7 @@
+echo "-------------------"
+echo "C'est partit Frèro!"
+echo "-------------------"
+
 PKGS=(
 'yay'
 'python-pip'
