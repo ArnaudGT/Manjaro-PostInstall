@@ -51,11 +51,6 @@ echo "---------"
 
 PKGS=(
 'heroic-games-launcher-bin'
-'nordic-darker-standard-buttons-theme'
-'nordic-darker-theme'
-'nordic-kde-git'
-'nordic-theme'
-'noto-fonts-emoji'
 'scrcpy'
 )
 
