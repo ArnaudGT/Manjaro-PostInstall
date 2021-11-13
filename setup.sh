@@ -68,7 +68,7 @@ echo "// Konsave //"
 echo "-------------"
 
 pip install konsave
-konsave
+konsave --noconfirm
 konsave -i $HOME/Manjaro-PostInstall/pointfichiers.knsv
 sleep 1
 konsave -a pointfichiers
