@@ -128,6 +128,7 @@ echo "--------------------"
 
 if lspci | grep -E "NVIDIA|GeForce"; then
 sudo mhwd -a pci nonfree 0300
+done
 
 echo -e "\nTravail Terminé!\n"
 exit
