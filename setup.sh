@@ -96,7 +96,7 @@ cd ~
 wget https://download01.xp-pen.com/file/2021/11/XP-PEN-pentablet-3.2.1.211019-1.x86_64.tar.gz
 sudo tar -x -f  ~/XP-PEN-pentablet-3.2.1.211019-1.x86_64.tar.gz
 cd ~/xp-pen-pentablet-3.2.1.211019-1.x86_64/
-sh install.sh
+sudo sh install.sh
 cd ~
 
 echo "---------------"
