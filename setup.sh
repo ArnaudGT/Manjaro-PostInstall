@@ -32,8 +32,6 @@ PKGS=(
 'htop'
 'kcalc'
 'kwalletmanager'
-'kwallet'
-'kwallet-pam'
 'yakuake'
 'kdeconnect'
 'kinfocenter'
@@ -50,6 +48,7 @@ echo "------------"
 
 PKGS=(
 'yay'
+'neofetch'
 'fakeroot'
 'python-pip'
 'krita'
