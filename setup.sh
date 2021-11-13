@@ -127,8 +127,8 @@ echo "// Drivers NVIDIA //"
 echo "--------------------"
 
 if lspci | grep -E "NVIDIA|GeForce"; then
-sudo mhwd -a pci nonfree 0300
-done
+    sudo mhwd -a pci nonfree 0300
+fi
 
 echo -e "\nTravail Terminé!\n"
 exit
