@@ -102,7 +102,6 @@ echo "// Protonup //"
 echo "--------------"
 
 pip3 install protonup
-protonup
 
 echo "--------------------"
 echo "// XP-Pen Drivers //"
