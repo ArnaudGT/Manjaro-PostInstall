@@ -37,6 +37,7 @@ PKGS=(
 'discord'
 'blender'
 'steam'
+'lutris'
 'p7zip'
 )
 
@@ -99,6 +100,14 @@ echo "// Nettoyage //"
 echo "---------------"
 
 rm -rf xp-pen-pentablet-3.2.1.211019-1.x86_64 && rm XP-PEN-pentablet-3.2.1.211019-1.x86_64.tar.gz
+
+echo "--------------------"
+echo "// Drivers NVIDIA //"
+echo "--------------------"
+
+if lspci | grep -E "NVIDIA|GeForce"; then
+sudo mhwd -a pci nonfree 0300
+
 
 echo -e "\nTravail Terminé!\n"
 exit
