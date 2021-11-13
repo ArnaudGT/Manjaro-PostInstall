@@ -69,7 +69,7 @@ echo "-------------"
 
 pip install konsave
 konsave --noconfirm
-konsave -i $HOME/Manjaro-PostInstall/pointfichiers.knsv
+konsave -i  ~/manjaro-postinstall/pointfichiers.knsv
 sleep 1
 konsave -a pointfichiers
 
@@ -85,13 +85,15 @@ echo "--------------"
 
 pip3 install protonup
 protonup
+
 echo "--------------------"
 echo "// XP-Pen Drivers //"
 echo "--------------------"
 
+cd ~
 wget https://download01.xp-pen.com/file/2021/11/XP-PEN-pentablet-3.2.1.211019-1.x86_64.tar.gz
-tar -x -f /home/arnaud/XP-PEN-pentablet-3.2.1.211019-1.x86_64.tar.gz
-cd ${HOME}/xp-pen-pentablet-3.2.1.211019-1.x86_64/
+tar -x -f  ~/XP-PEN-pentablet-3.2.1.211019-1.x86_64.tar.gz
+cd ~/xp-pen-pentablet-3.2.1.211019-1.x86_64/
 sh install.sh
 cd ~
 
