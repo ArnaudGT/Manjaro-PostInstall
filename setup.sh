@@ -23,6 +23,27 @@ echo "⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠒⠦⠤⢤⣄⣀�
 echo "⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡼⠁⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣄⠀"
 echo "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣦⣤⣤⣀⣀⣀⣀⣀⣀⣀⣤⣤⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀"
 
+echo "-------------------------"
+echo "// Supression de trucs //"
+echo "-------------------------"
+
+PKGS=(
+'khelpcenter'
+'htop'
+'kcalc'
+'kwalletmanager'
+'kwallet'
+'kwallet-pam'
+'yakuake'
+'kdeconnect'
+'kinfocenter'
+)
+
+for PKG in "${PKGS[@]}"; do
+    echo "SUPPRESSION DEkde: ${PKG}"
+    sudo pacman -Ru "$PKG" --noconfirm
+done
+
 echo "------------"
 echo "// Pacman //"
 echo "------------"
