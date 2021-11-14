@@ -59,6 +59,7 @@ PKGS=(
 'steam'
 'lutris'
 'p7zip'
+'celluloid'
 )
 
 for PKG in "${PKGS[@]}"; do
