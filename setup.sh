@@ -28,6 +28,7 @@ echo "// Supression de trucs //"
 echo "-------------------------"
 
 PKGS=(
+'mpv'
 'khelpcenter'
 'htop'
 'kcalc'
@@ -60,6 +61,10 @@ PKGS=(
 'lutris'
 'p7zip'
 'celluloid'
+'libuv'
+'rhash'
+'cmake'
+'pkgconf'
 )
 
 for PKG in "${PKGS[@]}"; do
