@@ -43,6 +43,8 @@ for PKG in "${PKGS[@]}"; do
     sudo pacman -Ru "$PKG" --noconfirm
 done
 
+sudo pacman -Syu
+
 echo "------------"
 echo "// Pacman //"
 echo "------------"
