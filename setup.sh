@@ -81,6 +81,7 @@ echo "---------"
 PKGS=(
 'heroic-games-launcher-bin'
 'scrcpy'
+'ttf-ms-fonts'
 )
 
 for PKG in "${PKGS[@]}"; do
@@ -122,12 +123,6 @@ cd ~/xp-pen-pentablet-3.2.1.211019-1.x86_64/
 sudo sh install.sh
 cd ~
 
-echo "---------------"
-echo "// Nettoyage //"
-echo "---------------"
-
-rm -rf xp-pen-pentablet-3.2.1.211019-1.x86_64 && rm XP-PEN-pentablet-3.2.1.211019-1.x86_64.tar.gz
-
 echo "--------------------"
 echo "// Drivers NVIDIA //"
 echo "--------------------"
@@ -135,6 +130,13 @@ echo "--------------------"
 if lspci | grep -E "NVIDIA|GeForce"; then
     sudo mhwd -a pci nonfree 0300
 fi
+
+echo "---------------"
+echo "// Nettoyage //"
+echo "---------------"
+
+rm -rf xp-pen-pentablet-3.2.1.211019-1.x86_64 && rm XP-PEN-pentablet-3.2.1.211019-1.x86_64.tar.gz
+sudo pacman -Rns $(pacman -Qtdq)
 
 echo -e "\nTravail Terminé!\n"
 exit
