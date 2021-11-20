@@ -67,6 +67,7 @@ PKGS=(
 'rhash'
 'cmake'
 'pkgconf'
+'xpad'
 )
 
 for PKG in "${PKGS[@]}"; do
